@@ -25,6 +25,9 @@ for (let i = 1; i <= 10; i++) {
  * Ejemplo tablaDel = 7 -> https://oscarm.tinytake.com/media/1739cf7?filename=1741680489599_TinyTake11-03-2025-09-07-44_638772772879657109.png&sub_type=thumbnail_preview&type=attachment&width=662&height=373
  */
 
-let tablaDel = 1;
+let tablaDel = 7;
 // for...
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i} * ${tablaDel} = ${i*tablaDel}`);
+}
 
