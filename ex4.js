@@ -8,15 +8,19 @@
  * Si ejecutas este programa, verás que el bucle se ejecuta exactamente siempre 10 veces. Da igual el valor que le pongas a la variable 'numeroVeces'.
  *
  *
- * Piensa bien que debes cambiar. Solo has de modificar para conseguirlo.
+ * Piensa bien que debes cambiar. Solo has de modificar un valor para conseguirlo.
  * Es OBLIGATORIO usar la variable 'numeroVeces' en el bucle!
  */
 
 let numeroVeces = 5;
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < numeroVeces; i++) {
   console.log("Ejecuto!");
 }
+
+/**
+ * Solución: Debemos cambiar el 10 por el valor de la variable numeroVeces. Así, conseguimos que el bucle se ejecuta siempre el valor de la variable numeroVeces
+ */
 
 /**
  * Resultado esperado cuando numeroVeces=5: https://oscarm.tinytake.com/msc/ODc4MzYxMV8yMjIwMzg0NQ
