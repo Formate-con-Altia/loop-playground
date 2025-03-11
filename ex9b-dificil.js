@@ -12,6 +12,8 @@
  * 3. Si la siguiente letra que ha introducido el usuario se encuentra en la palabra del dia, PERO no es la posición correcta, mostrar por consola: "la letra {letra} es correcta, PERO se encuentra en una posición diferente"
  */
 
+// NOTA: Para simplificar, pensemos que la palabraDelDia NO puede tener letras repetidas (complica mucho el algoritmo en ese caso)
+
 let palabraDelDia= "bucle";
 let palabraIntroducida = "bueno";
 
