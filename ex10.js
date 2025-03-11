@@ -30,9 +30,25 @@ let hora_dormir = 24;
 // Resultado esperado aproximado: https://oscarm.tinytake.com/msc/ODc4NTEzNl8yMjIwNTc2Nw
 
 for (let i=hora_actual; i<hora_dormir; i++) {
-    console.log(`Son las ${i}:00 Dependiendo de la hora que sea el sim hace una cosa u otra`);
+   // console.log(`Son las ${i}:00 Dependiendo de la hora que sea el sim hace una cosa u otra`);
 
     // Si son las 8...el sim se despierta
+    if (i==8) {
+        console.log("A las 8, el sim se despierta");
+    } else if (i==9) {
+        console.log("A las 9, el sim desayuna");
+    } else if (i>=10 && i<=16) {
+        console.log(`A las ${i}, el sim estudia Front End`);
+    } else if (i == 17) {
+        console.log("A las 17, el sim se echa una siesta.");
+    } else if (i >=18 && i <= 21) {
+        console.log(`A las ${i}, el sim tiene tiempo libre`);
+    } else if (i == 22) {
+        console.log("A las 22, el cena.");
+    } else if ( i== 23) {
+        console.log("A las 23, el sim se va a dormir.");
+
+    }
 
     // Si son las 9...el sim desayuna
 
