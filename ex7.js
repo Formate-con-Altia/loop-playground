@@ -22,7 +22,7 @@ let ultimoNumeroComprobar = 10;
 let esNumeroPar;
 
 for (let i = 0; i < ultimoNumeroComprobar; i++) {
-  esNumeroPar = i % 2;
+  esNumeroPar = i % 2 == 0;
   console.log(`El número ${i} es par o impar? ${esNumeroPar}`);
 
   // Modificar a partir de aquí
