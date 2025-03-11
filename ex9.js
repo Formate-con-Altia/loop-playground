@@ -12,5 +12,10 @@ let i=0;
 
 while(i<n) {
     console.log("Ejecutar!");
+    i = i + 1;
 }
 
+/**
+ * Solución: el bucle no termina nunca porque al principio, tenemos la evaluación de 0<10 -> true. Entonces se ejecuta el cuerpo del bucle...una y otra vez...porque nadie actualiza la variable i. 
+ * Para evitar ese bucle infinito, tan solo tenemos que actualizar la variable 'i' al final del bucle sumándole una unidad.
+ */
