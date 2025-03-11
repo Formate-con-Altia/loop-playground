@@ -1,8 +1,7 @@
 /**
  * Bucles while
  *
- * Modifica el bucle while para que escriba por el terminal 
- * escriba 5 veces exactamente "Ejecuto!". Actualmente lo escribe 6 veces. Porque?
+ * Modifica el bucle while para que escriba por el terminal  5 veces exactamente la palabra "Ejecuto!". * Actualmente lo escribe 6 veces. ¿Porque?
  * 
  * Reestricción: NO puedes cambiar el valor de las variables 'veces' ni 'i' !!
  */
