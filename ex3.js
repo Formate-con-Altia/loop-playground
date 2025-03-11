@@ -16,9 +16,14 @@
  *
  */
 
+/**
+ * Solución: la variable i, también llamada variable de iteración, toma por valor des de el 0 al 9.
+ * Una forma de mostrar su valor es concatenar el valor de la variable con el string "Estoy en la iteración"
+ */
+
 for (var i = 0; i < 10; i++) {
   // aquí tu código
-  console.log("Estoy en la iteración i");
+  console.log("Estoy en la iteración " + i);
 }
 
 /**
