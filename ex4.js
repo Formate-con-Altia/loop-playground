@@ -8,7 +8,7 @@
  * Si ejecutas este programa, verás que el bucle se ejecuta exactamente siempre 10 veces. Da igual el valor que le pongas a la variable 'numeroVeces'.
  *
  *
- * Piensa bien que debes cambiar. Solo has de modificar para conseguirlo.
+ * Piensa bien que debes cambiar. Solo has de modificar un valor para conseguirlo.
  * Es OBLIGATORIO usar la variable 'numeroVeces' en el bucle!
  */
 
