@@ -28,3 +28,13 @@ let hora_actual = 8;
 let hora_dormir = 24;
 
 // Resultado esperado aproximado: https://oscarm.tinytake.com/msc/ODc4NTEzNl8yMjIwNTc2Nw
+
+for (let i=hora_actual; i<hora_dormir; i++) {
+    console.log(`Son las ${i}:00 Dependiendo de la hora que sea el sim hace una cosa u otra`);
+
+    // Si son las 8...el sim se despierta
+
+    // Si son las 9...el sim desayuna
+
+    // Si son las 10 o las 11 el sim estudio Front End
+}
