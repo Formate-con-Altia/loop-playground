@@ -2,6 +2,8 @@
 
 Algunos ejercicios para practicar con bucles. El enunciado de cada ejercicio se encuentra en un comentario, normalmente con una captura de pantalla con el resultado esperado.
 
+Dispones de un fichero "pistas-ejercicios.pdf" para guiarte en la solución de cada uno de los apartados.
+
 ## Cómo ejecutar cada ejercicio
 
 Escribir `node ex1.js` y pulsar intro.
