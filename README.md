@@ -30,6 +30,7 @@ Cada ejercicio contiene su JavaScript y comparte `style.css`. No hay que instala
 | [index11.html](index11.html) | Dibujar con un bucle |
 | [index12.html](index12.html) | Pedir la palabra hasta acertar |
 | [index13.html](index13.html) | Bonus · Trimestres con switch |
+| [index14.html](index14.html) | Sumar números con un acumulador |
 
 Los apartados 5b, 7b y 9b son retos adicionales. El 13 es un bonus de condicionales con switch.
 
