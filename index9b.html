@@ -36,13 +36,18 @@ o: no está en la palabra</pre>
       </details>
     </main>
     <script>
-      // Completa o modifica el código según el enunciado.
       let palabraDelDia = "bucle";
       let palabraIntroducida = "bueno";
       for (let i = 0; i < palabraDelDia.length; i++) {
         let siguienteLetraCorrecta = palabraDelDia[i];
         let siguienteLetraIntroducida = palabraIntroducida[i];
-        // Completa las tres posibilidades.
+        if (siguienteLetraIntroducida == siguienteLetraCorrecta) {
+          console.log(siguienteLetraIntroducida + ": posición correcta");
+        } else if (palabraDelDia.includes(siguienteLetraIntroducida)) {
+          console.log(siguienteLetraIntroducida + ": posición diferente");
+        } else {
+          console.log(siguienteLetraIntroducida + ": no está en la palabra");
+        }
       }
     </script>
   </body>

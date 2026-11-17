@@ -49,14 +49,16 @@ BONUS: cuatro círculos, un hexágono amarillo y cinco círculos.</pre>
       }
     </script>
     <script>
-      // Completa o modifica el código según el enunciado.
       let numeroInicial = 0;
       let numeroFinal = 10;
       let tocaHexagono = 4;
-      // Sustituye estas llamadas por un bucle.
-      dibujarCirculo();
-      dibujarCirculo();
-      dibujarCirculo();
+      for (let i = numeroInicial; i < numeroFinal; i++) {
+        if (i == tocaHexagono) {
+          dibujarHexagono();
+        } else {
+          dibujarCirculo();
+        }
+      }
     </script>
   </body>
 </html>

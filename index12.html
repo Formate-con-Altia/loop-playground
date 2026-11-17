@@ -36,12 +36,16 @@ Al cancelar: termina sin felicitar al usuario.</pre>
       <p id="mensaje" role="status"></p>
     </main>
     <script>
-      // Completa o modifica el código según el enunciado.
-      let palabra;
       let palabraSecreta = "cervatillo";
-      // palabra = prompt("Escribe la palabra secreta:");
-      // Completa aquí el while. Debes volver a pedir la palabra en su interior.
-      // Al terminar, muestra el acierto solo si la palabra es correcta.
+      let palabra = prompt("Escribe la palabra secreta:");
+      while (palabra != null && palabra.toLowerCase() != palabraSecreta) {
+        palabra = prompt("No es correcta. Vuelve a intentarlo:");
+      }
+      if (palabra != null) {
+        document.querySelector("#mensaje").textContent = "¡Enhorabuena! La palabra era: " + palabraSecreta;
+      } else {
+        document.querySelector("#mensaje").textContent = "Has cancelado el juego.";
+      }
     </script>
   </body>
 </html>

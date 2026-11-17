@@ -36,12 +36,16 @@
       </details>
     </main>
     <script>
-      // Completa o modifica el código según el enunciado.
       let numeroFinal = 5;
       for (let i = -5; i < numeroFinal; i++) {
         console.log("Número: " + i);
-        console.log("Soy un número positivo!");
-        console.log("Soy un número negativo!");
+        if (i < 0) {
+          console.log("Soy un número negativo!");
+        } else if (i == 0) {
+          console.log("Soy el cero!");
+        } else {
+          console.log("Soy un número positivo!");
+        }
       }
     </script>
   </body>

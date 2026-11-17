@@ -40,12 +40,15 @@ El número 9 es impar!</pre>
       </details>
     </main>
     <script>
-      // Completa o modifica el código según el enunciado.
       let ultimoNumeroComprobar = 10;
       let esNumeroPar;
       for (let i = 0; i < ultimoNumeroComprobar; i++) {
         esNumeroPar = i % 2 == 0;
-        // Escribe aquí el if...else.
+        if (esNumeroPar) {
+          console.log("El número " + i + " es par!");
+        } else {
+          console.log("El número " + i + " es impar!");
+        }
       }
     </script>
   </body>

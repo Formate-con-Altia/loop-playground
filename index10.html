@@ -51,11 +51,26 @@ A las 23, el sim se va a dormir</pre>
       </details>
     </main>
     <script>
-      // Completa o modifica el código según el enunciado.
       let hora_actual = 8;
-      let hora_dormir = 24; // Límite excluido: la última hora mostrada es 23.
+      let hora_dormir = 24;
       for (let i = hora_actual; i < hora_dormir; i++) {
-        // Decide qué actividad corresponde a esta hora.
+        let actividad;
+        if (i == 8) {
+          actividad = "se despierta";
+        } else if (i == 9) {
+          actividad = "desayuna";
+        } else if (i <= 16) {
+          actividad = "estudia Front End";
+        } else if (i == 17) {
+          actividad = "duerme la siesta";
+        } else if (i <= 21) {
+          actividad = "tiene tiempo libre";
+        } else if (i == 22) {
+          actividad = "cena";
+        } else {
+          actividad = "se va a dormir";
+        }
+        console.log("A las " + i + ", el sim " + actividad);
       }
     </script>
   </body>
