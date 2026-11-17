@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Pares e impares</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 7 · Pares e impares</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>El operador % devuelve el resto de una división. Si un entero dividido entre 2 tiene resto 0, es par.</p>
+        <pre><code>console.log(8 % 2); // 0
+console.log(7 % 2); // 1</code></pre>
+        <p class="idea">Una comparación como i % 2 == 0 devuelve true o false y puede guardarse en una variable. El cero es par.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Completa el bucle con un if...else que utilice esNumeroPar para indicar si cada número del 0 al 9 es par o impar.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>El número 0 es par!
+El número 1 es impar!
+El número 2 es par!
+El número 3 es impar!
+El número 4 es par!
+El número 5 es impar!
+El número 6 es par!
+El número 7 es impar!
+El número 8 es par!
+El número 9 es impar!</pre>
+      </details>
+    </main>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      let ultimoNumeroComprobar = 10;
+      let esNumeroPar;
+      for (let i = 0; i < ultimoNumeroComprobar; i++) {
+        esNumeroPar = i % 2 == 0;
+        // Escribe aquí el if...else.
+      }
+    </script>
+  </body>
+</html>

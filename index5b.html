@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5b - Extra · Seis bolas aleatorias</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 5b · Extra · Seis bolas aleatorias</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Math.random() devuelve un decimal desde 0 incluido hasta 1 excluido. Math.floor() redondea hacia abajo.</p>
+        <pre><code>let dado = Math.floor(Math.random() * 6) + 1;
+console.log(dado);</code></pre>
+        <p class="idea">Genera el aleatorio dentro del bucle para obtener una nueva extracción en cada vuelta.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Simula seis extracciones numeradas del 1 al 6, con números enteros del 1 al 49. Se permiten repetidos: es una simplificación, no una Bonoloto real. No declares funciones.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>Ejemplo (los números varían):
+Bola 1: 12
+Bola 2: 37
+Bola 3: 17
+Bola 4: 2
+Bola 5: 11
+Bola 6: 11</pre>
+      </details>
+    </main>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      for (let i = 1; i <= 6; i++) {
+        console.log("Bola 1: 12");
+      }
+    </script>
+  </body>
+</html>

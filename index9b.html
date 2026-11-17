@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9b - Extra · Letras de la palabra del día</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 9b · Extra · Letras de la palabra del día</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>texto[i] obtiene un carácter: la primera posición es 0. length indica la longitud e includes() comprueba si una cadena contiene otra.</p>
+        <pre><code>let texto = "casa";
+console.log(texto[0]); // c
+console.log(texto.includes("s")); // true</code></pre>
+        <p class="idea">Comprueba primero la posición exacta: una letra bien colocada también aparece dentro de la palabra.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Compara bucle y bueno letra a letra. Primero comprueba si la letra está en la posición correcta; después, si aparece en otra posición; por último, si no está. Supón palabras de cinco letras, en minúsculas y sin letras repetidas en ninguna de las dos.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>b: posición correcta
+u: posición correcta
+e: posición diferente
+n: no está en la palabra
+o: no está en la palabra</pre>
+      </details>
+    </main>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      let palabraDelDia = "bucle";
+      let palabraIntroducida = "bueno";
+      for (let i = 0; i < palabraDelDia.length; i++) {
+        let siguienteLetraCorrecta = palabraDelDia[i];
+        let siguienteLetraIntroducida = palabraIntroducida[i];
+        // Completa las tres posibilidades.
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Negativo, cero o positivo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 6 · Negativo, cero o positivo</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Puedes incluir condiciones dentro de un bucle. En cada vuelta se evalúan usando el valor actual de i.</p>
+        <pre><code>for (let i = 1; i &lt;= 3; i++) {
+  if (i == 2) {
+    console.log("Es el dos");
+  } else {
+    console.log("Otro número");
+  }
+}</code></pre>
+        <p class="idea">Un if...else if...else permite elegir una sola opción entre varios casos. El cero no es positivo ni negativo.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Recorre los números de -5 a 4. Conserva el mensaje que indica el número y sustituye los dos mensajes siguientes por if...else if...else: negativo, cero o positivo. ¿Cuántas iteraciones hay?</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>10 iteraciones: -5 a -1 son negativos; 0 es cero; 1 a 4 son positivos.</pre>
+      </details>
+    </main>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      let numeroFinal = 5;
+      for (let i = -5; i < numeroFinal; i++) {
+        console.log("Número: " + i);
+        console.log("Soy un número positivo!");
+        console.log("Soy un número negativo!");
+      }
+    </script>
+  </body>
+</html>

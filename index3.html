@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Mostrar la iteración</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 3 · Mostrar la iteración</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Un for tiene un inicio, una condición y una actualización. Comprueba la condición antes de cada vuelta. i++ aumenta i en uno.</p>
+        <pre><code>for (let i = 0; i &lt; 3; i++) {
+  console.log("Vuelta " + i);
+}</code></pre>
+        <p class="idea">Con inicio 0 y condición i &lt; 3 se ejecutan las vueltas 0, 1 y 2. El límite 3 queda excluido.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Corrige el mensaje para mostrar el valor de i, desde 0 hasta 9. No cambies los límites.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>Estoy en la iteración 0
+Estoy en la iteración 1
+Estoy en la iteración 2
+Estoy en la iteración 3
+Estoy en la iteración 4
+Estoy en la iteración 5
+Estoy en la iteración 6
+Estoy en la iteración 7
+Estoy en la iteración 8
+Estoy en la iteración 9</pre>
+      </details>
+    </main>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      for (let i = 0; i < 10; i++) {
+        console.log("Estoy en la iteración i");
+      }
+    </script>
+  </body>
+</html>

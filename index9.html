@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 - Detectar un bucle infinito</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 9 · Detectar un bucle infinito</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Un while no termina si su condición siempre es verdadera. Sigue el valor del contador a mano para detectar el problema.</p>
+        <pre><code>// Preguntas para analizar el bucle:
+// ¿Qué valor tiene i al empezar?
+// ¿Qué instrucción cambia i?
+// ¿Cuándo dejaría de cumplirse i &lt; n?</code></pre>
+        <p class="idea">El código defectuoso forma parte del ejercicio. Está comentado para evitar bloquear la pestaña al abrirla: repáralo antes de activarlo.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>El while que aparece comentado es infinito. Sin ejecutarlo, explica por qué la condición nunca cambia. Añade la instrucción que falta para obtener diez mensajes. Descomenta el bloque solo después de repararlo.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>Una vez reparado: «Ejecutar!» diez veces.
+En el código original i siempre vale 0 y 0 &lt; 10 nunca deja de ser verdadero.</pre>
+      </details>
+    </main>
+    <script>
+      // Analiza el bucle infinito antes de ejecutarlo.
+      let n = 10;
+      let i = 0;
+      // Este bucle es infinito: analízalo y repáralo antes de descomentarlo.
+      /*
+      while (i < n) {
+        console.log("Ejecutar!");
+      }
+      */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Dibujar con un bucle</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 11 · Dibujar con un bucle</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Las funciones dibujarCirculo() y dibujarHexagono() ya están preparadas. Cada llamada añade una figura al panel.</p>
+        <pre><code>dibujarCirculo();
+dibujarHexagono();</code></pre>
+        <p class="idea">No necesitas modificar las funciones. El número de iteraciones depende del inicio y del límite del bucle.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Sustituye las tres llamadas por un bucle que dibuje numeroFinal - numeroInicial círculos. Con 0 y 10 deben aparecer diez figuras. BONUS: cuando i sea igual a tocaHexagono, dibuja un hexágono en lugar del círculo. Con tocaHexagono = 4 será la quinta figura.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>Base: diez círculos.
+BONUS: cuatro círculos, un hexágono amarillo y cinco círculos.</pre>
+      </details>
+      <section aria-labelledby="dibujo"><h2 id="dibujo">Zona de dibujo</h2><div id="zona-juego" class="figuras"></div></section>
+    </main>
+    <script>
+      // Funciones preparadas: no necesitas modificarlas.
+      function dibujarCirculo() {
+        let figura = document.createElement("span");
+        figura.className = "figura circulo";
+        figura.setAttribute("aria-label", "Círculo rojo");
+        document.querySelector("#zona-juego").appendChild(figura);
+      }
+
+      function dibujarHexagono() {
+        let figura = document.createElement("span");
+        figura.className = "figura hexagono";
+        figura.setAttribute("aria-label", "Hexágono amarillo");
+        document.querySelector("#zona-juego").appendChild(figura);
+      }
+    </script>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      let numeroInicial = 0;
+      let numeroFinal = 10;
+      let tocaHexagono = 4;
+      // Sustituye estas llamadas por un bucle.
+      dibujarCirculo();
+      dibujarCirculo();
+      dibujarCirculo();
+    </script>
+  </body>
+</html>

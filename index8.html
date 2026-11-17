@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - El límite del while</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 8 · El límite del while</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>while repite su bloque mientras la condición sea verdadera. El contador se prepara antes y se actualiza dentro.</p>
+        <pre><code>let contador = 0;
+while (contador &lt; 3) {
+  console.log(contador);
+  contador++;
+}</code></pre>
+        <p class="idea">Revisa el primer valor, el último y la condición. &lt;= incluye el límite; &lt; lo excluye.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>El código muestra seis mensajes. Cambia solo la condición del while para obtener cinco. No cambies las declaraciones ni el incremento.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>Inicialmente: 6 mensajes.
+Tras corregir la condición: 5 mensajes.</pre>
+      </details>
+    </main>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      let veces = 5;
+      let i = 0;
+      while (i <= veces) {
+        console.log("Ejecuto!");
+        i++;
+      }
+    </script>
+  </body>
+</html>

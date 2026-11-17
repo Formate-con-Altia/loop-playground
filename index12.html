@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Pedir la palabra hasta acertar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 12 · Pedir la palabra hasta acertar</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>prompt() devuelve el texto escrito o null al cancelar. El while debe pedir un nuevo intento para que su condición pueda cambiar.</p>
+        <pre><code>let respuesta = prompt("Escribe tu nombre:");
+if (respuesta != null) {
+  console.log(respuesta.toLowerCase());
+}</code></pre>
+        <p class="idea">Comprueba que el valor no sea null antes de usar toLowerCase(). Con &amp;&amp; la segunda condición solo se evalúa si se cumple la primera.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Utiliza while para pedir la palabra cervatillo hasta acertar. Si el usuario cancela, termina sin mostrar un acierto. BONUS: acepta mayúsculas y minúsculas. Desactiva temporalmente Archivo → Autoguardado y guarda con Ctrl + S solo cuando quieras probar. El prompt inicial está comentado: actívalo cuando completes el bucle.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>Con una palabra incorrecta: vuelve a preguntar.
+Con cervatillo (o CERVATILLO en el bonus): muestra el acierto.
+Al cancelar: termina sin felicitar al usuario.</pre>
+      </details>
+      <p id="mensaje" role="status"></p>
+    </main>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      let palabra;
+      let palabraSecreta = "cervatillo";
+      // palabra = prompt("Escribe la palabra secreta:");
+      // Completa aquí el while. Debes volver a pedir la palabra en su interior.
+      // Al terminar, muestra el acierto solo si la palabra es correcta.
+    </script>
+  </body>
+</html>

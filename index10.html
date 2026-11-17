@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - El día de un Sim</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 10 · El día de un Sim</h1>
+        <p>Practica los bucles en la consola del navegador.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Puedes incluir condiciones dentro de un bucle. En cada vuelta se evalúan usando el valor actual de i.</p>
+        <pre><code>for (let i = 1; i &lt;= 3; i++) {
+  if (i == 2) {
+    console.log("Es el dos");
+  } else {
+    console.log("Otro número");
+  }
+}</code></pre>
+        <p class="idea">Un if...else if...else permite elegir una sola opción entre varios casos. El cero no es positivo ni negativo.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Muestra una actividad por cada hora, de 8 a 23: a las 8 se despierta; a las 9 desayuna; de 10 a 16 estudia Front End; a las 17 duerme la siesta; de 18 a 21 tiene tiempo libre; a las 22 cena; a las 23 se va a dormir. Usa un for y condicionales.</p>
+        <p>Lee el código y predice el resultado antes de cambiarlo. Edita el último <code>&lt;script&gt;</code> y guarda para probar. Recuerda utilizar el prompt de clase cuando necesites ayuda.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>A las 8, el sim se despierta
+A las 9, el sim desayuna
+A las 10, el sim estudia Front End
+A las 11, el sim estudia Front End
+A las 12, el sim estudia Front End
+A las 13, el sim estudia Front End
+A las 14, el sim estudia Front End
+A las 15, el sim estudia Front End
+A las 16, el sim estudia Front End
+A las 17, el sim duerme la siesta
+A las 18, el sim tiene tiempo libre
+A las 19, el sim tiene tiempo libre
+A las 20, el sim tiene tiempo libre
+A las 21, el sim tiene tiempo libre
+A las 22, el sim cena
+A las 23, el sim se va a dormir</pre>
+      </details>
+    </main>
+    <script>
+      // Completa o modifica el código según el enunciado.
+      let hora_actual = 8;
+      let hora_dormir = 24; // Límite excluido: la última hora mostrada es 23.
+      for (let i = hora_actual; i < hora_dormir; i++) {
+        // Decide qué actividad corresponde a esta hora.
+      }
+    </script>
+  </body>
+</html>
